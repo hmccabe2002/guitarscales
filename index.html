@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Guitar Scales Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="gcWindow">
+<div id="gcWrap">
+  <div id="men-A" class="scales-men"><div></div></div>
+  <div id="total-scale-men" class="scales-men"></div>
+  <div id="gcFretboard">
+  <div class="gcMen">
+  <ul class="chords-menu">
+  <li><button data-scale="A" class="main-btn">A</button></li>
+  <li><button data-scale="A#/Bb" class="main-btn">A#</button></li>
+  <li><button data-scale="B" class="main-btn">B</button></li>
+  <li><button data-scale="C" class="main-btn">C</button></li>
+  <li><button data-scale="C#/Db" class="main-btn">C#</button></li>
+  <li><button data-scale="D" class="main-btn">D</button></li>
+  <li><button data-scale="D#/Eb" class="main-btn">D#</button></li>
+  <li><button data-scale="E" class="main-btn">E</button></li>
+  <li><button data-scale="F" class="main-btn">F</button></li>
+  <li><button data-scale="F#/Gb" class="main-btn">F#</button></li>
+  <li><button data-scale="G" class="main-btn">G</button></li>
+  <li><button data-scale="G#/Ab" class="main-btn">G#</button></li>
+</ul></div>
+<div class="gcSubMen">
+  <ul class="chords-subgroups">
+</ul>
+    </div>
+
+    <div class="fretMarker frP3"><div class="fMarkTXT">3</div></div>
+    <div class="fretMarker frP5"><div class="fMarkTXT">5</div></div>
+    <div class="fretMarker frP7"><div class="fMarkTXT">7</div></div>
+    <div class="fretMarker frP9"><div class="fMarkTXT">9</div></div>
+    <div class="fretMarker frP12"><div class="fMarkTXT">12</div></div>
+    
+    <div id="gc-string-E" class="gc-string">
+      <div class="nt inv fret-0 E" data-ntClass="E"></div>
+      <div class="nt inv fret-1 F" data-ntClass="F"></div>
+      <div class="nt inv fret-2 Fs" data-ntClass="Fs"></div>
+      <div class="nt inv fret-3 G" data-ntClass="G"></div>
+      <div class="nt inv fret-4 Gs" data-ntClass="Gs"></div>
+      <div class="nt inv fret-5 A" data-ntClass="A"></div>
+      <div class="nt inv fret-6 As" data-ntClass="As"></div>
+      <div class="nt inv fret-7 B" data-ntClass="B"></div>
+      <div class="nt inv fret-8 C" data-ntClass="C"></div>
+      <div class="nt inv fret-9 Cs" data-ntClass="Cs"></div>
+      <div class="nt inv fret-10 D" data-ntClass="D"></div>
+      <div class="nt inv fret-11 Ds" data-ntClass="Ds"></div>
+      <div class="nt inv fret-12 E" data-ntClass="E"></div>
+      <div class="nt inv fret-13 F" data-ntClass="F"></div>
+      <div class="nt inv fret-14 Fs" data-ntClass="Fs"></div>
+    </div>
+    <div id="gc-string-A" class="gc-string">
+      <div class="nt inv fret-0 A" data-ntClass="A"></div>
+      <div class="nt inv fret-1 As" data-ntClass="As"></div>
+      <div class="nt inv fret-2 B" data-ntClass="B"></div>
+      <div class="nt inv fret-3 C" data-ntClass="C"></div>
+      <div class="nt inv fret-4 Cs" data-ntClass="Cs"></div>
+      <div class="nt inv fret-5 D" data-ntClass="D"></div>
+      <div class="nt inv fret-6 Ds" data-ntClass="Ds"></div>
+      <div class="nt inv fret-7 E" data-ntClass="E"></div>
+      <div class="nt inv fret-8 F" data-ntClass="F"></div>
+      <div class="nt inv fret-9 Fs" data-ntClass="Fs"></div>
+      <div class="nt inv fret-10 G" data-ntClass="G"></div>
+      <div class="nt inv fret-11 Gs" data-ntClass="Gs"></div>
+      <div class="nt inv fret-12 A" data-ntClass="A"></div>
+      <div class="nt inv fret-13 As" data-ntClass="As"></div>
+      <div class="nt inv fret-14 B" data-ntClass="B"></div>
+    </div>
+    <div id="gc-string-D" class="gc-string">
+      <div class="nt inv fret-0 D" data-ntClass="D"></div>
+      <div class="nt inv fret-1 Ds" data-ntClass="Ds"></div>
+      <div class="nt inv fret-2 E" data-ntClass="E"></div>
+      <div class="nt inv fret-3 F" data-ntClass="F"></div>
+      <div class="nt inv fret-4 Fs" data-ntClass="Fs"></div>
+      <div class="nt inv fret-5 G" data-ntClass="G"></div>
+      <div class="nt inv fret-6 Gs" data-ntClass="Gs"></div>
+      <div class="nt inv fret-7 A" data-ntClass="A"></div>
+      <div class="nt inv fret-8 As" data-ntClass="As"></div>
+      <div class="nt inv fret-9 B" data-ntClass="B"></div>
+      <div class="nt inv fret-10 C" data-ntClass="C"></div>
+      <div class="nt inv fret-11 Cs" data-ntClass="Cs"></div>
+      <div class="nt inv fret-12 D" data-ntClass="D"></div>
+      <div class="nt inv fret-13 Ds" data-ntClass="Ds"></div>
+      <div class="nt inv fret-14 E" data-ntClass="E"></div>
+    </div>
+    <div id="gc-string-G" class="gc-string">
+      <div class="nt inv fret-0 G" data-ntClass="G"></div>
+      <div class="nt inv fret-1 Gs" data-ntClass="Gs"></div>
+      <div class="nt inv fret-2 A" data-ntClass="A"></div>
+      <div class="nt inv fret-3 As" data-ntClass="As"></div>
+      <div class="nt inv fret-4 B" data-ntClass="B"></div>
+      <div class="nt inv fret-5 C" data-ntClass="C"></div>
+      <div class="nt inv fret-6 Cs" data-ntClass="Cs"></div>
+      <div class="nt inv fret-7 D" data-ntClass="D"></div>
+      <div class="nt inv fret-8 Ds" data-ntClass="Ds"></div>
+      <div class="nt inv fret-9 E" data-ntClass="E"></div>
+      <div class="nt inv fret-10 F" data-ntClass="F"></div>
+      <div class="nt inv fret-11 Fs" data-ntClass="Fs"></div>
+      <div class="nt inv fret-12 G" data-ntClass="G"></div>
+      <div class="nt inv fret-13 Gs" data-ntClass="Gs"></div>
+      <div class="nt inv fret-14 A" data-ntClass="A"></div>
+    </div>
+    <div id="gc-string-B" class="gc-string">
+      <div class="nt inv fret-0 B" data-ntClass="B"></div>
+      <div class="nt inv fret-1 C" data-ntClass="C"></div>
+      <div class="nt inv fret-2 Cs" data-ntClass="Cs"></div>
+      <div class="nt inv fret-3 D" data-ntClass="D"></div>
+      <div class="nt inv fret-4 Ds" data-ntClass="Ds"></div>
+      <div class="nt inv fret-5 E" data-ntClass="E"></div>
+      <div class="nt inv fret-6 F" data-ntClass="F"></div>
+      <div class="nt inv fret-7 Fs" data-ntClass="Fs"></div>
+      <div class="nt inv fret-8 G" data-ntClass="G"></div>
+      <div class="nt inv fret-9 Gs" data-ntClass="Gs"></div>
+      <div class="nt inv fret-10 A" data-ntClass="A"></div>
+      <div class="nt inv fret-11 As" data-ntClass="As"></div>
+      <div class="nt inv fret-12 B" data-ntClass="B"></div>
+      <div class="nt inv fret-13 C" data-ntClass="C"></div>
+      <div class="nt inv fret-14 Cs" data-ntClass="Cs"></div>
+    </div>
+    <div id="gc-string-E2" class="gc-string">
+      <div class="nt inv fret-0 E" data-ntClass="E"></div>
+      <div class="nt inv fret-1 F" data-ntClass="F"></div>
+      <div class="nt inv fret-2 Fs" data-ntClass="Fs"></div>
+      <div class="nt inv fret-3 G" data-ntClass="G"></div>
+      <div class="nt inv fret-4 Gs" data-ntClass="Gs"></div>
+      <div class="nt inv fret-5 A" data-ntClass="A"></div>
+      <div class="nt inv fret-6 As" data-ntClass="As"></div>
+      <div class="nt inv fret-7 B" data-ntClass="B"></div>
+      <div class="nt inv fret-8 C" data-ntClass="C"></div>
+      <div class="nt inv fret-9 Cs" data-ntClass="Cs"></div>
+      <div class="nt inv fret-10 D" data-ntClass="D"></div>
+      <div class="nt inv fret-11 Ds" data-ntClass="Ds"></div>
+      <div class="nt inv fret-12 E" data-ntClass="E"></div>
+      <div class="nt inv fret-13 F" data-ntClass="F"></div>
+      <div class="nt inv fret-14 Fs" data-ntClass="Fs"></div>
+</div>
+
+    
+<div class="chord">
+  <div id='gcInfTit'><div id="tit1">ROOT</div><div id="tit2">SCALE</div><div id="tit3">STRUCTURE</div></div>
+  <div id="inf"><div></div><div></div><div></div></div>
+</div>
+  </div>
+  
+</div> <!---gcWrap--->
+</div> <!---gcWindow--->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
